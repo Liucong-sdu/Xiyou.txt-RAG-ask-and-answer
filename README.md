@@ -1,5 +1,9 @@
 # RAG代码须知
-## 源代码里面def __init__(self):
+作者第二次修改弄了一个可以直接使用的py文件，将最上面的“hudong-xiyou”文件夹全部下载,运行里面的py文件即可
+（因为有人反映第一次的代码运行出不来，我排查了一下应该是本地建立索引库的时候调用硅基流动api的问题，硅基流动可能网络不好返回了空值）
+第一次的源代码在在hudong-xiyou文件夹外面
+## 源代码里面
+        def __init__(self):
         self.api_url = "https://api.siliconflow.cn/v1"（这个地方是你用的模型的URL）
         self.headers = {
             "Authorization": "Bearer <your apikey>",（这个地方填你的apikey）
